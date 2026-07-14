@@ -1,0 +1,17 @@
+#include<stdio.h>
+void min_digit(int n){
+    int min=9;
+    while(n!=0){
+        int r=n%10;
+        if(min>r){
+            min=r;
+        }
+        n=n/10;
+    }
+    printf("minimum=%d",min);
+}
+void main(){
+    int n;
+    scanf("%d",&n);
+    min_digit(n);
+}
