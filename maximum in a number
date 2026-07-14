@@ -1,0 +1,17 @@
+#include<stdio.h>
+void max_digit(int n){
+    int max=0;
+    while(n!=0){
+        int r=n%10;
+        if(r>max){
+            max=r;
+        }
+        n=n/10;
+    }
+    printf("max=%d",max);
+}
+void main(){
+    int n;
+    scanf("%d",&n);
+    max_digit(n);
+}
